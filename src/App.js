@@ -46,6 +46,7 @@ function App() {
   const [currScore, setCurrScore] = useState(0)
   const [highScore, setHighScore] = useState(0)
   const [clickedCards, setClickedCards] = useState([])
+  const [totalClicks, setTotalClicks] = useState(0)
 
   const shuffle = function (array) {
     let currentIndex = array.length
@@ -65,16 +66,16 @@ function App() {
     setCardArray(shuffled)
   }
   const incrementScore = function() {
-    if (currScore < 11) {
       setCurrScore(currScore + 1)
-    } else if (currScore === 11) {
-      setCurrScore(currScore + 1)
-      chooseModal('win')
-      setHighScore(currScore)
-    }
+  }
+  const incrementClicks = function () {
+    setTotalClicks(totalClicks + 1)
   }
   const resetScore = function () {
     setCurrScore(0)
+  }
+  const resetTotalClicks = function () {
+    setTotalClicks(0)
   }
   const updateClicked = function(array) {
     setClickedCards(array)
@@ -82,16 +83,22 @@ function App() {
   const chooseModal = function (param) {
     setModalSwitch(param)
   }
+  const updateHighScore = function (value) {
+    setHighScore(value)
+  }
   const renderSwitch = function (param) {
     switch(param) {
       case 'default' :
         return <Modal chooseModal={chooseModal}/>;
       case 'fail' :
-        return <FailModal chooseModal={chooseModal}/>;
+        return <FailModal chooseModal={chooseModal}
+                          resetTotalClicks={resetTotalClicks}/>;
       case 'win' :
         return <WinModal resetScore={resetScore} 
                         updateClicked={updateClicked} 
                         chooseModal={chooseModal} 
+                        resetTotalClicks={resetTotalClicks}
+                        updateHighScore={updateHighScore}
                         currScore={currScore} 
                         highScore={highScore}/>;
       default :
@@ -109,6 +116,10 @@ function App() {
         <Scoreboard
           currScore={currScore}
           highScore={highScore}
+          totalClicks={totalClicks}
+          updateHighScore={updateHighScore}
+          chooseModal={chooseModal}
+          updateClicked={updateClicked}
         />
       </header>
       <main className="App-main">
@@ -122,7 +133,9 @@ function App() {
           clickedCards={clickedCards}
           updateClicked={updateClicked}
           increment={incrementScore}
+          incrementClicks={incrementClicks}
           resetScore={resetScore}
+          resetTotalClicks={resetTotalClicks}
           shuffle={shuffleCards}
           chooseModal={chooseModal}
           />
