@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/memory-cards/static/css/main.bd3638b6.chunk.css",
+    "main.js": "/memory-cards/static/js/main.31cd08ae.chunk.js",
+    "main.js.map": "/memory-cards/static/js/main.31cd08ae.chunk.js.map",
+    "runtime-main.js": "/memory-cards/static/js/runtime-main.ee809348.js",
+    "runtime-main.js.map": "/memory-cards/static/js/runtime-main.ee809348.js.map",
+    "static/js/2.dca348b9.chunk.js": "/memory-cards/static/js/2.dca348b9.chunk.js",
+    "static/js/2.dca348b9.chunk.js.map": "/memory-cards/static/js/2.dca348b9.chunk.js.map",
+    "index.html": "/memory-cards/index.html",
+    "static/css/main.bd3638b6.chunk.css.map": "/memory-cards/static/css/main.bd3638b6.chunk.css.map",
+    "static/js/2.dca348b9.chunk.js.LICENSE.txt": "/memory-cards/static/js/2.dca348b9.chunk.js.LICENSE.txt",
+    "static/media/afghanhound.e6919a4e.jpg": "/memory-cards/static/media/afghanhound.e6919a4e.jpg",
+    "static/media/alaskanmalamute.da7fab06.jpg": "/memory-cards/static/media/alaskanmalamute.da7fab06.jpg",
+    "static/media/bassethound.2c5d8c91.jpg": "/memory-cards/static/media/bassethound.2c5d8c91.jpg",
+    "static/media/bordercollie.761495cf.jpg": "/memory-cards/static/media/bordercollie.761495cf.jpg",
+    "static/media/borzoi.5a42eed0.jpg": "/memory-cards/static/media/borzoi.5a42eed0.jpg",
+    "static/media/englishmastiff.2bb48eff.jpg": "/memory-cards/static/media/englishmastiff.2bb48eff.jpg",
+    "static/media/fx1.2cc16053.wav": "/memory-cards/static/media/fx1.2cc16053.wav",
+    "static/media/fx2.d7c2aecd.mp3": "/memory-cards/static/media/fx2.d7c2aecd.mp3",
+    "static/media/fx3.4e3baf32.wav": "/memory-cards/static/media/fx3.4e3baf32.wav",
+    "static/media/goldenretriever.d3ca17ae.jpg": "/memory-cards/static/media/goldenretriever.d3ca17ae.jpg",
+    "static/media/greatdane.6b4f3d84.jpg": "/memory-cards/static/media/greatdane.6b4f3d84.jpg",
+    "static/media/greyhound.6f49d964.jpg": "/memory-cards/static/media/greyhound.6f49d964.jpg",
+    "static/media/labradorretriever.290b83f4.jpg": "/memory-cards/static/media/labradorretriever.290b83f4.jpg",
+    "static/media/rottweiler.831c12e5.jpg": "/memory-cards/static/media/rottweiler.831c12e5.jpg",
+    "static/media/saluki.4049d6e2.jpg": "/memory-cards/static/media/saluki.4049d6e2.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ee809348.js",
+    "static/js/2.dca348b9.chunk.js",
+    "static/css/main.bd3638b6.chunk.css",
+    "static/js/main.31cd08ae.chunk.js"
+  ]
+}
